@@ -8,16 +8,14 @@
 #include <stdio.h>
 
 int main(int argc, char * argv[]) {
+    char c;
+    int i;
     
-    int input_int;
-    float input_float;
+    printf("input a number:");
+    scanf("%c",&c);
     
-    printf("enter an integar: ");
-    scanf("%d",&input_int);
-    
-    printf("enter a float: ");
-    scanf("%f",&input_float);
-    printf("integar : %d, float : %f \n",input_int,input_float);
+    i = c -'0';
+    printf("The input number is %i\n",i);
     
     return 0;
 }
